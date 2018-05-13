@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-get 'todo/index', to: 'todo#index'
+  get 'todo/index', to: 'todo#index'
+  get 'todo/show', to: 'todo#show'
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
