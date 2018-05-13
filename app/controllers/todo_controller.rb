@@ -1,13 +1,10 @@
 class TodoController < ApplicationController
   def index
-  @todos = Todo.all
+    @todos = Todo.all
   end
   
   def show
-  @todo = Todo.find_by_id(params[:id])
-  end
-  
-  def new
+    @todo = Todo.find_by_id(params[:id])
   end
   
   def create
@@ -19,7 +16,7 @@ class TodoController < ApplicationController
   end
   
   def edit
-  @todo = Todo.find_by_id(params[:id])
+    @todo = Todo.find_by_id(params[:id])
   end
   
   def update

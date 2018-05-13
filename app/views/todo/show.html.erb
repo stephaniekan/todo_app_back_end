@@ -1,16 +1,7 @@
-<h3>Todo #<%= params[:id] %></h3>
-
-<h1>
-  <img class="company-logo" 
-  src="http://ww1.prweb.com/prfiles/2015/08/24/13706165/gI_60914_codenow%20logo%20large.png">
-  </img> <br> </br>
-  Workshop Todo List
-</h1>
-
 <div class="card">
-  <input type="checkbox">
-  <h2><%= @todo_description %></h2>
-  <span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo_pomodoro_estimate %> Pomodoros</span>
+  <input type="checkbox" name=""/>
+  <h2><%= @todo.description %></h2>
+  <span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
   <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
   <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
   <a href="/" class="simple-link">Go back...</a>
